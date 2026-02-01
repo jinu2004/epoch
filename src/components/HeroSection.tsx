@@ -1,8 +1,8 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
+import {ChevronDown, Mouse} from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SandParticles from './SandParticles';
-import heroBackground from '../../public/background.jpeg';
+import heroBackground from '../../public/background.png';
 import { useRef } from 'react';
 
 const HeroSection = () => {
@@ -78,10 +78,7 @@ const HeroSection = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="font-display text-6xl md:text-[10rem] lg:text-[14rem] font-bold tracking-[0.15em] text-gold mb-4 leading-none"
-                    style={{
-                        textShadow: '0 0 80px rgba(212, 175, 55, 0.4), 0 4px 20px rgba(0,0,0,0.8)',
-                    }}
+                    className="font-display text-6xl md:text-[10rem] lg:text-[14rem] font-bold tracking-[0.07em] text-white mb-4 leading-none"
                 >
                     EPOCH
                 </motion.h1>
@@ -103,9 +100,9 @@ const HeroSection = () => {
                     transition={{ duration: 1, delay: 1 }}
                     className="flex items-center justify-center gap-4 mb-10"
                 >
-                    <div className="w-16 h-[1px] bg-gradient-to-r from-transparent to-gold/70" />
-                    <div className="w-2 h-2 rotate-45 border border-gold/70 bg-gold/20" />
-                    <div className="w-16 h-[1px] bg-gradient-to-l from-transparent to-gold/70" />
+                    <div className="w-16 h-[1px] bg-gradient-to-r from-transparent to-gold" />
+                    <div className="w-2 h-2 rotate-45 border border-gold bg-gold" />
+                    <div className="w-16 h-[1px] bg-gradient-to-l from-transparent to-gold" />
                 </motion.div>
 
                 {/* CTA Buttons */}
@@ -125,7 +122,7 @@ const HeroSection = () => {
                         variant="outline"
                         size="lg"
                         onClick={scrollToEvents}
-                        className="border-gold/40 text-gold hover:bg-gold/10 hover:border-gold font-display text-base px-10 py-6 tracking-wider transition-all duration-300 backdrop-blur-sm"
+                        className="text-gold bg-transparent font-display text-base px-10 py-6 tracking-wider transition-all duration-300 hover:shadow-[0_0_50px_rgba(212,175,55,0.5)] border border-gold-light/30"
                     >
                         Explore Events
                     </Button>
@@ -145,8 +142,8 @@ const HeroSection = () => {
                     transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
                     className="flex flex-col items-center gap-2"
                 >
-                    <span className="text-sand/60 text-xs font-body tracking-[0.3em] uppercase">Discover</span>
-                    <ChevronDown className="w-5 h-5 text-gold/60" />
+                    <span className="text-sand text-xs font-body tracking-[0.3em] uppercase">Discover</span>
+                    <Mouse className="w-5 h-5 text-gold" />
                 </motion.div>
             </motion.div>
 
