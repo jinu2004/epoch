@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import {ChevronDown, Mouse} from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SandParticles from './SandParticles';
-import heroBackground from '../../public/background.png';
+import heroBackground from '/background.png';
 import { useRef } from 'react';
 
 const HeroSection = () => {
