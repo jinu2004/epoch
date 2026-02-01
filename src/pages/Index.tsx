@@ -7,10 +7,12 @@ import HighlightsSection from '@/components/HighlightsSection';
 import SponsorsSection from '@/components/SponsorsSection';
 import FinalCTASection from '@/components/FinalCTASection';
 import Footer from '@/components/Footer';
+import CanvasCursor from "@/lib/mouseEffect/CanvasCursor.tsx";
 
 const Index = () => {
   return (
     <main className="bg-background text-foreground overflow-x-hidden">
+        <CanvasCursor/>
       <HeroSection />
       <ProShowsSection />
       <EventsSection />
